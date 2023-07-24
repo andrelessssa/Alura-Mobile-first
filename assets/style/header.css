@@ -1,10 +1,18 @@
+:root{
+    --cor-de-funfo:#EBECEE;
+    --branco:#FFFFFF;
+    --laranfa:#EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%,#326589 165.37%);
+}
 .cabecalho__menu-hamburguer{
     width: 24px;
     height: 24px;
     background-image: url(../img/Menu1.png);
     background-repeat: no-repeat;
     background-position: center;
-    display: inline-block
+    display: inline-block;
+    padding: 16px;
+    
 }
 .cabecalho {
     background-color: var(--branco);
@@ -26,6 +34,8 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
+   
     
 }
 .container__botao:checked~.lista-menu{
@@ -36,6 +46,14 @@
     background-color: var(--branco);
     
 }
- .lista-menu__titulo{
-    color: var(--branco);
- }   
+.lista-menu__titulo{
+    color: var(--laranfa);
+}
+.lista-menu__link{
+    background-color: var(--azul-degrade);
+    backdrop-filter: text;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+
+}
