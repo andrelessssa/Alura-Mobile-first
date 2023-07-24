@@ -1,10 +1,10 @@
+@import url("./header.css");
 :root{
     --cor-de-funfo:#EBECEE;
+    --branco-teste: #FFFFFF;
+    --laranfa: #EB9B00;
     
 }
 body{
     background-color: var(--cor-de-funfo);
-}
-h1{
-    background-color: white;
 }
