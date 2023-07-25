@@ -1,8 +1,16 @@
-@import url("./header.css");
+@import url("../style/header.css");
+@import url("/assets/style/banner.css");
+@import url("/assets/style/carrossel.css");
+
 :root{
     --cor-de-funfo:#EBECEE;
     --branco:#FFFFFF;
-    --laranfa:#EB9B00;
+    --laranja:#EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%,#326589 165.37%);
+
+    --fonte-principal:"Poppins";
+
+
     
 }
 body{

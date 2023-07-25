@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Alura Books</title>
 </head>
 <body>
@@ -25,13 +26,43 @@
             </ul>
         <img src="./assets/img/Logo.svg" alt="Logo" class="container__imagem">
         </div>
-        <div class="container">
+        <div class="container ">
         <a href="#"><img src="./assets/img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
         <a href="#"><img src="./assets/img/Compras.svg" alt="Carrinho de Compra" class="container__imagem"></a>
         <a href="#"><img src="./assets/img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
     </div>    
     </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__perquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./assets/img/ApacheKafka.png" alt="Livro da Apache"></div>
+      <div class="swiper-slide"><img src="./assets/img/Liderança.png" alt="Livro sobre liderança"></div>
+      <div class="swiper-slide"><img src="./assets/img/Javascript.png" alt="Livro sobre JavaScript"></div>
+      <div class="swiper-slide"><img src="./assets/img/Guia Front-end.png" alt="Livro sobre Front-End"></div>
+      <div class="swiper-slide"><img src="./assets/img/Portugol.png" alt="Livro sobre Portugol"></div>  
+      <div class="swiper-slide"><img src="./assets/img/Angular.png" alt="Livro sobre angular"></div>  
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    </section>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 </html>
