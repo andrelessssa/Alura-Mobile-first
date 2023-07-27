@@ -39,6 +39,8 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
+         <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
         <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
@@ -49,10 +51,9 @@
       <div class="swiper-slide"><img src="./assets/img/Javascript.png" alt="Livro sobre JavaScript"></div>
       <div class="swiper-slide"><img src="./assets/img/Guia Front-end.png" alt="Livro sobre Front-End"></div>
       <div class="swiper-slide"><img src="./assets/img/Portugol.png" alt="Livro sobre Portugol"></div>  
-      <div class="swiper-slide"><img src="./assets/img/Angular.png" alt="Livro sobre angular"></div>  
+       
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+   
   
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
@@ -64,5 +65,15 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper ('.swiper',{
+            spaceBetween : 10,
+            slidesPerView: 3,
+            pagination:{
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 </html>
