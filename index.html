@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="/assets/style/carrossel.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Alura Books</title>
 </head>
@@ -22,7 +23,6 @@
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrurura</a></li>
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
-
             </ul>
         <img src="./assets/img/Logo.svg" alt="Logo" class="container__imagem">
         </div>
@@ -37,12 +37,13 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__perquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+                 <!-- CARROSSEL -->
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
-         <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+         <!-- If we need pagination 
+    <div class="swiper-pagination"></div>-->
         <!-- Slider main container -->
-<div class="swiper">
+    <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -50,21 +51,30 @@
       <div class="swiper-slide"><img src="./assets/img/Liderança.png" alt="Livro sobre liderança"></div>
       <div class="swiper-slide"><img src="./assets/img/Javascript.png" alt="Livro sobre JavaScript"></div>
       <div class="swiper-slide"><img src="./assets/img/Guia Front-end.png" alt="Livro sobre Front-End"></div>
-      <div class="swiper-slide"><img src="./assets/img/Portugol.png" alt="Livro sobre Portugol"></div>  
-       
+      <div class="swiper-slide"><img src="./assets/img/Portugol.png" alt="Livro sobre Portugol"></div>        
     </div>
-   
-  
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
-    </section>
+   
+    </div>
+    <div class="card">
+        <!-- primeira linha -->
+        <div class="card_descricao">
+            <!-- primeira coluna -->
+            <div class="descricao">
+                <h3 class="descricao__titulo">Talvez você se enteresse por ...</h3>
+                <h2 class="descricao__titulo-livro">Angular 11 e firebase</h2>
+                <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma</p>
+            </div>
+            <!-- segunda colu -->
+            <img src="/assets/img/Angular.png" alt="logo angular" class="descricao__imagem">
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </section>
+                <!-- SCRIPT -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper ('.swiper',{
             spaceBetween : 10,
